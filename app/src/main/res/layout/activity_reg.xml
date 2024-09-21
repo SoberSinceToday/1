@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegActivity"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/app_name"
+        android:textColor="#303030"
+
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/regPhone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/regPhone"
+        android:textColorHint="@color/lightGrey"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/regPas"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/regPas"
+        android:textColorHint="@color/lightGrey"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="text" />
+
+    <RadioGroup
+
+        android:id="@+id/workerMode"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/pink_out_line"
+        android:checkedButton="@+id/worker"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/worker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/soloMode"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/boss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/onlineMode"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/regButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/regText"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/linkToLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/acme"
+        android:text="@string/logText"
+        android:textColor="#303030"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

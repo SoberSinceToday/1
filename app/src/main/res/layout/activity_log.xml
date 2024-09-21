@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LogActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Вход в T-rexit"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textSize="35sp"
+
+        android:textColor="#303030"
+        />
+
+    <EditText
+        android:autofillHints=""
+        android:id="@+id/logPhone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/regPhone"
+        android:textColorHint="@color/lightGrey"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:autofillHints=""
+        android:id="@+id/logPas"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="text"
+        android:textColorHint="@color/lightGrey"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:hint="@string/regPas" />
+
+    <Button
+        android:id="@+id/logButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/logText"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/linkToReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/acme"
+        android:text="@string/regText"
+
+        android:textColor="#303030"
+        android:textSize="15sp" />
+</LinearLayout>
